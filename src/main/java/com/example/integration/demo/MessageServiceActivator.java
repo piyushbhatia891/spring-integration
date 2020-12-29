@@ -7,8 +7,8 @@ import org.springframework.integration.annotation.ServiceActivator;
 public class MessageServiceActivator {
 
 	@ServiceActivator(inputChannel = "transformerOutputChannel")
-	public void getMessage(String cargoMessage) {
-		System.out.println(cargoMessage);
+	public void getMessage(String message) {
+		System.out.println(message);
 	}
 
 }
